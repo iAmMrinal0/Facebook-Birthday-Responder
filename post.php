@@ -73,6 +73,9 @@ $(document).ready(function(){
 <?php include('ref.php'); ?>
 </div>
 <br/>
+<a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout"/></a>
+
+	<p><a onclick='postToFeed(); return false;'><img src="fbbutton.png" alt="Post To Feed"/></a></p>
 <input type="button" class="click" id="clickbutton" value="Click Me"/><br/>
 <div class="box">
 <ol type='1'>
