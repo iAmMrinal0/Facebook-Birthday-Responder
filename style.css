@@ -91,4 +91,12 @@ div.posts
 	text-shadow:1px 0px 0px #ffffff;
 	opacity:0.7;
 }
+div.heading
+{
+text-align:center
+font-size:20px;
+}
+div.user
+{
+text-align:right;
 }

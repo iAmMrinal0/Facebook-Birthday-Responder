@@ -19,8 +19,8 @@ try
 {
 $user_profile=$facebook->api('/me/feed?limit=50');
 $user_info=$facebook->api('/me');
-echo("Hi,".$user_info['name']."<br/>");
-echo("Welcome to Birthday Responder<br/>");
+echo("<div class='heading'>Welcome to Birthday Responder</div><br/>");
+echo("<div class='user'>Hi,".$user_info['name']."</div><br/>");
 echo("<div class='posts'>");
 $t=count($user_profile);
 $i=0;
