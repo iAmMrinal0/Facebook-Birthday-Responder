@@ -91,17 +91,17 @@ try
 $user_info=$facebook->api('/me');
 echo("<div class='heading'>Welcome to Birthday Responder</div><br/>");
 echo("<div class='user'>Hi,".$user_info['name']."</div><br/>");
-echo("<div class='posts'>");
 }
 catch(FacebookApiException $e)
 {
 error_log($e);
 }
 }
-echo("<div id='reff'>");
+?>
+<div id='reff'>
+<?php
 include('ref.php');
 ?>
-</div>
 <br/>
 <a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout"/></a>
 
