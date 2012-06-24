@@ -6,6 +6,7 @@
 html
 {
 background-color:#3b5999;
+color:white;
 }
 a
 {
