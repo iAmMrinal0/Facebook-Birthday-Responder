@@ -68,7 +68,8 @@
 <div class="box">
 <ol type='1'>
 <li>Posts which are on your wall posted by others are displayed.</li><br/>
-<ul type="round"><li>For example:<br/>
+<li>For example:<br/>
+<ul type="round">
 <li>'a' posts on your wall => Displayed Here.</li><br/>
 <li>'a' tags you in a post which is on his/her wall => Not Displayed Here.</li></ul></li><br/>
 <li>Displays 20 posts from your wall and refreshes every 60 seconds.</li><br/>
