@@ -1,8 +1,10 @@
-var auto_refresh = setInterval(
-function()
-{
-$('#reff').fadeOut('slow').load('ref.php').fadeIn("slow");
-}, 60000);
+$(document).ready(function() {
+ 	 $("#reff").load("ref.php");
+   var refreshId = setInterval(function() {
+      $("#reff").load('ref.php');
+   }, 6000);
+   $.ajaxSetup({ cache: false });
+});
 $(document).ready(function(){
 	$(".box").hide();
 	$(".click").click(function(){

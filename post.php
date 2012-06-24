@@ -92,9 +92,7 @@ error_log($e);
 }
 ?>
 <div id='reff'>
-<?php
-include('ref.php');
-?>
+</div>
 <br/>
 <a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout"/></a>
 

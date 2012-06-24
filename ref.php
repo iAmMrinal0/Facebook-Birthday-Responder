@@ -68,7 +68,7 @@ echo("No posts to show.<br/>");
 }
 }
 ?>
-</div><br/>
+<br/>
 <?php
 }
 catch(FacebookApiException $e)
