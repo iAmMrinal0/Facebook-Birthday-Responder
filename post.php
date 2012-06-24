@@ -97,7 +97,6 @@ include("ref.php");
 ?>
 </div>
 <br/>
-<input type="button" class="clickit" value="Refresh"/><br/>
 <a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout"/></a>
 
 	<p><a onclick='postToFeed(); return false;'><img src="fbbutton.png" alt="Post To Feed"/></a></p>

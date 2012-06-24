@@ -82,3 +82,4 @@ header("location:http://bdayresponder.herokuapp.com/index.php");
 }
 
 ?>
+<meta http-equiv="refresh" content="600" />
