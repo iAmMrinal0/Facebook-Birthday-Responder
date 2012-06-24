@@ -3,13 +3,6 @@
 <title>Birthday Responder</title>
 <html xmlns:fb="http://ogp.me/ns/fb#">
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript">
-    var auto_refresh = setInterval(
-function()
-{
-$('#reff').fadeOut('slow').load('ref.php').fadeIn("slow");
-}, 60000);
-  </script>
 <div id='fb-root'></div>
     <script src='http://connect.facebook.net/en_US/all.js'></script>
     <script> 
