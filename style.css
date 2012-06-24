@@ -93,10 +93,11 @@ div.posts
 }
 div.heading
 {
-text-align:center
+text-align:center;
 font-size:20px;
+font-family:Comic Sans MS;
 }
 div.user
 {
-text-align:right;
+font-size:15px;
 }
