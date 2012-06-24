@@ -4,6 +4,14 @@
 <link rel="shortcut icon" href="http://img.1mobile.com/market/i/e/4/e4c683ceaf73da99356372019fa88f75.png" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".box").hide();
+	$(".click").click(function(){
+    $(".box").slideToggle("slow");
+  });
+}
+</script>
 <div id='fb-root'></div>
     <script src='http://connect.facebook.net/en_US/all.js'></script>
     <script> 
@@ -65,6 +73,7 @@
 <?php include('ref.php'); ?>
 </div>
 <br/>
+<input type="button" class="click" value="Click Me"/>
 <div class="box">
 <ol type='1'>
 <li>Posts which are on your wall posted by others are displayed.</li><br/>
