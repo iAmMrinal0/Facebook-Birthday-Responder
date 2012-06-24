@@ -25,7 +25,7 @@ $('#reff').fadeOut('slow').load('ref.php').fadeIn("slow");
                   } 
 				  else
 				  {
-				  document.location.href="http://fbtest.geekruleploit.com/facebook/logout.php";
+				  document.location.href="http://glowing-journey-8305.herokuapp.com/logout.php";
 				  }
 				  
                 });

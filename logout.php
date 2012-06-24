@@ -2,12 +2,12 @@
 require './src/facebook.php';
 
 $facebook = new Facebook(array(
-  'appId'  => '464995143525912',
-  'secret' => 'ccc341ce0edbb25731027f56863ce0e5',
+  'appId'  => '235376736580175',
+  'secret' => 'c3059cf7554bb4a42ceede7fe509a8f9',
 ));
 
 setcookie('fbs_'.$facebook->getAppId(), '', time()-100, '/');
 session_destroy();
-header('Location:http://fbtest.geekruleploit.com/facebook/index.php');
+header('Location:http://glowing-journey-8305.herokuapp.com/index.php');
 
 ?>

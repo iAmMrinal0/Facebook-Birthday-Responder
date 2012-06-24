@@ -15,7 +15,7 @@
                   } 
 				  else
 				  {
-				  document.location.href="http://fbtest.geekruleploit.com/facebook/logout.php";
+				  document.location.href="http://glowing-journey-8305.herokuapp.com/logout.php";
 				  }
 				  
                 });
@@ -30,8 +30,8 @@ require('./src/facebook.php');
 require('batch.php');
 
 $facebook = new Facebook(array(
-  'appId'  => '464995143525912',
-  'secret' => 'ccc341ce0edbb25731027f56863ce0e5',
+  'appId'  => '235376736580175',
+  'secret' => 'c3059cf7554bb4a42ceede7fe509a8f9',
 ));
 $user=$facebook->getUser();
 if($user)
@@ -60,7 +60,7 @@ $h[$i]=$batch->response($hi[$i]);
 if(isset($g))
 {
 $_SESSION['success']=1;
-header("location:post.php");
+header("location:http://glowing-journey-8305.herokuapp.com/post.php");
 }
 else
 {
