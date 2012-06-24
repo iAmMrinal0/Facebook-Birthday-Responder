@@ -71,9 +71,15 @@ color:red;
 </div>
 <br/>
 <div>
+Posts which are on your wall posted by others are displayed.<br/>
+For example:<br/>
+'a' posts on your wall => Displayed Here.<br/>
+'a' tags you in a post which is on his/her wall => Not Displayed Here.<br/>
 Displays 20 posts from your wall and refreshes every 60 seconds.<br/>
 The comments you enter will be posted on all the posts displayed to you.<br/>
+All the posts will be liked automatically.<br/>
 Feedback can be posted <a href="https://www.facebook.com/pages/Birthday-Responder/423834974322726" target="_blank">Here</a><br/>
+None of your data has been saved.So you don't need to worry about privacy.<br/>
 </div>
 <div class="fb-like" data-href="https://www.facebook.com/pages/Birthday-Responder/423834974322726" data-send="true" data-layout="box_count" data-width="450" data-show-faces="true" data-colorscheme="dark" data-font="verdana"></div>
 </body>
