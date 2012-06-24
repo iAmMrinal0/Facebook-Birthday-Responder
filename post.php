@@ -3,6 +3,10 @@
 <title>Birthday Responder</title>
 <link rel="shortcut icon" href="http://img.1mobile.com/market/i/e/4/e4c683ceaf73da99356372019fa88f75.png" />
 <style type="text/css">
+html
+{
+background-color:#3b5999;
+}
 a
 {
 color:red;
