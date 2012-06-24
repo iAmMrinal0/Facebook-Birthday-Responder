@@ -1,6 +1,6 @@
 <?php
 
-include("new.php");
+require("new.php");
 
 echo("hi")
 
