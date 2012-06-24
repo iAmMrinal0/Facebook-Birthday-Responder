@@ -1,9 +1,12 @@
-var auto_refresh = setInterval(
-function()
-    {
+var reload = function(){
     $('#reff').fadeOut().load('ref.php').fadeIn();
+};
 
-    }, 10000);
+var auto_refresh = setInterval(reload, 10000);
+
+$('.clickit').click(function(){
+    clearInterval(auto_refresh);
+});
 $(document).ready(function(){
 	$(".box").hide();
 	$(".click").click(function(){
