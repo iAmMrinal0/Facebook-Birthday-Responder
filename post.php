@@ -15,7 +15,7 @@ $('#reff').fadeOut('slow').load('ref.php').fadeIn("slow");
     <script> 
 	window.fbAsyncInit = function() {
                FB.init({ 
-                  appId:'464995143525912',
+                  appId:'235376736580175',
 				  cookie:true, 
                   status:true, 
 				  xfbml:true, 
