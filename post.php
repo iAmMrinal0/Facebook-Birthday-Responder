@@ -4,14 +4,7 @@
 <link rel="shortcut icon" href="http://img.1mobile.com/market/i/e/4/e4c683ceaf73da99356372019fa88f75.png" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$(".box").hide();
-	$(".click").click(function(){
-    $(".box").slideToggle("slow");
-  });
-});
-</script>
+<script type="text/javascript" src="jquery.1.2.js"></script>
 <div id='fb-root'></div>
     <script src='http://connect.facebook.net/en_US/all.js'></script>
     <script> 
