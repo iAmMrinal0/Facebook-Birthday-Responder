@@ -87,7 +87,7 @@ echo("No posts to show.<br/>");
 ?>
 <a href="<?php echo($logout); ?>">logout</a>
 
-	<p><button onclick='postToFeed(); return false;'><img src="fbbutton.png" alt="Post To Feed"/></button></p>
+	<p><a onclick='postToFeed(); return false;'><img src="fbbutton.png" alt="Post To Feed"/></a></p>
     <p id='msg'></p>
 <?php
 }
