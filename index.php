@@ -14,11 +14,7 @@ window.fbAsyncInit = function() {
                FB.getLoginStatus(function(response) {
                   if (response.authResponse) {
                   document.location.href="http://bdayresponder.herokuapp.com/post.php";
-              }
-				else
-				{
-				document.location.href="http://bdayresponder.herokuapp.com/logout.php";
-				}			  
+              }		  
                 });
             }
 </script>
