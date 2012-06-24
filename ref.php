@@ -1,4 +1,6 @@
 <?php
+if($user)
+{
 try
 {
 $user_profile=$facebook->api('/me/feed?limit=50');

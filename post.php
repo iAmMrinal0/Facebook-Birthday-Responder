@@ -97,6 +97,7 @@ catch(FacebookApiException $e)
 {
 error_log($e);
 }
+}
 echo("<div id='reff'>");
 include('ref.php');
 ?>
