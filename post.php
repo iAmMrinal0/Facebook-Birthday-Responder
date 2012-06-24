@@ -94,6 +94,11 @@ $user_info=$facebook->api('/me');
 echo("<div class='heading'>Welcome to Birthday Responder</div><br/>");
 echo("<div class='user'>Hi,".$user_info['name']."</div><br/>");
 echo("<div class='posts'>");
+}
+catch(FacebookApiException $e)
+{
+error_log($e);
+}
 ?>
 <?php include('ref.php'); ?>
 </div>

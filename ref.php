@@ -1,4 +1,6 @@
 <?php
+try
+{
 $user_profile=$facebook->api('/me/feed?limit=50');
 $t=count($user_profile);
 $i=0;
