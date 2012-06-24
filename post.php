@@ -10,7 +10,7 @@ $(document).ready(function(){
 	$(".click").click(function(){
     $(".box").slideToggle("slow");
   });
-}
+});
 </script>
 <div id='fb-root'></div>
     <script src='http://connect.facebook.net/en_US/all.js'></script>
@@ -73,7 +73,7 @@ $(document).ready(function(){
 <?php include('ref.php'); ?>
 </div>
 <br/>
-<input type="button" class="click" value="Click Me"/>
+<input type="button" class="click" id="clickbutton" value="Click Me"/><br/>
 <div class="box">
 <ol type='1'>
 <li>Posts which are on your wall posted by others are displayed.</li><br/>

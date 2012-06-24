@@ -69,3 +69,26 @@ div.posts
 	text-decoration:none;
 	text-shadow:1px 1px 0px #528ecc;
 }
+#clickbutton
+{
+-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	border-radius:11px;
+	display:inline-block;
+	color:#000000;
+	font-family:Comic Sans MS;
+	font-size:16px;
+	font-weight:normal;
+	padding:10px 13px;
+	text-decoration:none;
+	text-shadow:1px 0px 0px #ffffff;
+	opacity:0.7;
+}
+}

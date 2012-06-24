@@ -69,7 +69,7 @@ $_SESSION['a']=$num_id;
 ?>
 <form action="send.php" method="post">
 Comment to be posted : <input type="text" name="data" id="data" class="comment-box"/>
-<button type="submit" name='submit' onclick='return sure();'>send</button>
+<button type="submit" name='submit' onclick='return sure();' required>send</button>
 </form>
 <?php
 }
