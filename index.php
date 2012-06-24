@@ -10,11 +10,11 @@ window.fbAsyncInit = function() {
                });
                FB.getLoginStatus(function(response) {
                   if (response.authResponse) {
-                  document.location.href="http://fbtest.geekruleploit.com/facebook/post.php";
+                  document.location.href="http://glowing-journey-8305.herokuapp.com/post.php";
               }
 				else
 				{
-				document.location.href="http://fbtest.geekruleploit.com/facebook/logout.php";
+				document.location.href="http://glowing-journey-8305.herokuapp.com/logout.php";
 				}			  
                 });
             }
@@ -24,8 +24,8 @@ window.fbAsyncInit = function() {
 require('./src/facebook.php');
 echo("hi");
 $facebook = new Facebook(array(
-  'appId'  => '464995143525912',
-  'secret' => 'ccc341ce0edbb25731027f56863ce0e5',
+  'appId'  => '235376736580175',
+  'secret' => 'c3059cf7554bb4a42ceede7fe509a8f9',
 ));
 
 $user=$facebook->getUser();
@@ -37,7 +37,7 @@ $logout=$facebook->getLogoutUrl();
 else
 {
 $login=$facebook->getLoginUrl(array(
-'redirect_uri' => 'http://fbtest.geekruleploit.com/facebook/photos.php',
+'redirect_uri' => 'http://glowing-journey-8305.herokuapp.com/post.php',
 'scope' => 'user_birthday,publish_stream,read_stream,user_photos'
 )
 );
@@ -46,7 +46,7 @@ $login=$facebook->getLoginUrl(array(
 
 if($user)
 {
-header("location:post.php");
+header("location:http://glowing-journey-8305.herokuapp.com/post.php");
 }
 else
 {
