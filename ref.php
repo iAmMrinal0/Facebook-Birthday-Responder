@@ -1,27 +1,5 @@
 <?php
-//session_start();
-set_time_limit(300);
-require('./src/facebook.php');
-
-$facebook = new Facebook(array(
-  'appId'  => '235376736580175',
-  'secret' => 'c3059cf7554bb4a42ceede7fe509a8f9',
-));
-
-$user=$facebook->getUser();
-
-if($user)
-{
-$logout=$facebook->getLogoutUrl(array(
-'next' => 'http://bdayresponder.herokuapp.com/logout.php'
-));
-try
-{
 $user_profile=$facebook->api('/me/feed?limit=50');
-$user_info=$facebook->api('/me');
-echo("<div class='heading'>Welcome to Birthday Responder</div><br/>");
-echo("<div class='user'>Hi,".$user_info['name']."</div><br/>");
-echo("<div class='posts'>");
 $t=count($user_profile);
 $i=0;
 foreach($user_profile as $feed)
