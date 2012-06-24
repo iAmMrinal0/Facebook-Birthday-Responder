@@ -47,7 +47,7 @@ if(isset($trial['picture']))
 }
 if(isset($trial['message']))
 {
-$a=123;
+$arent=123;
 echo($trial['message']."<br/>");
 }
 $num_id[$i]=$trial['id'];
@@ -76,7 +76,7 @@ if(isset($_SESSION['success']))
 echo("posted successfully<br/>");
 unset($_SESSION['success']);
 }
-if(!isset($a))
+if(!isset($arent))
 {
 {
 echo("No posts to show.<br/>");
