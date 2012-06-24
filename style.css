@@ -43,8 +43,7 @@ div.box
 	display:inline-block;
 	color:#ffffff;
 	font-family:Comic Sans MS;
-	font-size:21px;
-	font-weight:bold;
+	font-size:15px;
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #528ecc;
@@ -65,8 +64,7 @@ div.posts
 	display:inline-block;
 	color:#ffffff;
 	font-family:Comic Sans MS;
-	font-size:21px;
-	font-weight:bold;
+	font-size:10px;
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #528ecc;
