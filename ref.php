@@ -19,6 +19,8 @@ try
 {
 $user_profile=$facebook->api('/me/feed?limit=50');
 $user_info=$facebook->api('/me');
+echo("Hi,".$user_profile['name']."<br/>");
+echo("Welcome to Birthday Responder<br/>");
 $t=count($user_profile);
 $i=0;
 foreach($user_profile as $feed)
@@ -85,7 +87,7 @@ echo("No posts to show.<br/>");
 ?>
 <a href="<?php echo($logout); ?>">logout</a>
 
-	<p><button onclick='postToFeed(); return false;'><img src="fbbuttom.png" alt="Post To Feed"/></button></p>
+	<p><button onclick='postToFeed(); return false;'><img src="fbbutton.png" alt="Post To Feed"/></button></p>
     <p id='msg'></p>
 <?php
 }
