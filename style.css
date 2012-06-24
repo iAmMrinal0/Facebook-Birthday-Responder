@@ -6,7 +6,7 @@ a
 {
 color:red;
 }
-.comment-box
+input.comment-box
 {
 border: 1px solid #ccc;
 -moz-border-radius: 10px;
@@ -20,7 +20,7 @@ padding: 4px 7px;
 outline: 0;
 -webkit-appearance: none;
 }
-.comment-box:focus 
+input.comment-box:focus 
 {
 border-color: #339933;
 }
