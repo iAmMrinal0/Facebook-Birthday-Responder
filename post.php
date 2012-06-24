@@ -71,8 +71,8 @@ color:red;
 </div>
 <br/>
 <div>
-Displays 20 posts from your wall and refreshes every 60 seconds.
-The comments you enter will be posted on all the posts displayed to you.
+Displays 20 posts from your wall and refreshes every 60 seconds.<br/>
+The comments you enter will be posted on all the posts displayed to you.<br/>
 Feedback can be posted <a href="https://www.facebook.com/pages/Birthday-Responder/423834974322726" target="_blank">Here</a><br/>
 </div>
 <div class="fb-like" data-href="https://www.facebook.com/pages/Birthday-Responder/423834974322726" data-send="true" data-layout="box_count" data-width="450" data-show-faces="true" data-colorscheme="dark" data-font="verdana"></div>
