@@ -90,7 +90,7 @@ try
 {
 $user_info=$facebook->api('/me');
 echo("<div class='heading'>Welcome to Birthday Responder</div><br/>");
-echo("<div class='user'>Hi,".$user_info['name']."<img src='https://graph.facebook.com/me/picture'/></div><br/>");
+echo("<div class='user'>Hi,".$user_info['name']."<img src='https://graph.facebook.com/$user/picture'/></div><br/>");
 }
 catch(FacebookApiException $e)
 {
