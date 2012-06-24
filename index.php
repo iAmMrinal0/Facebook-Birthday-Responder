@@ -56,6 +56,11 @@ else
 {
 ?>
 <a href="<?php echo($login); ?>">login</a>
+<p align="center">
+Your birthday?too many wall posts? Don't worry. This app lets you reply to all wall posts with a single click.
+Hope you like it.
+</p>
+<div class="fb-like" data-href="https://www.facebook.com/pages/Birthday-Responder/423834974322726" data-send="true" data-layout="box_count" data-width="450" data-show-faces="true" data-colorscheme="dark" data-font="verdana"></div>
 <?php
 }
 ?>

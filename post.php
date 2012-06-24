@@ -34,14 +34,13 @@ $('#reff').fadeOut('slow').load('ref.php').fadeIn("slow");
             }
       function postToFeed() {
 
-        // calling the API ...
         var obj = {
           method: 'feed',
-          link: 'https://facebook.com/mrinal0',
-          picture: 'http://highlandsun.com/hyc/LumiKey/P0001885.JPG',
-          name: 'Hello World-Mrinal Purohit',
-          caption: 'Lets see what can be done here.',
-          description: 'Graph api-one of the easiest things to learn.'
+          link: 'http://bdatresponder.herokuapp.com',
+          picture: 'http://img.1mobile.com/market/i/e/4/e4c683ceaf73da99356372019fa88f75.png',
+          name: 'Birthday Responder',
+          caption: 'Hi',
+          description: 'Your birthday?too many wall posts? Dont worry. This app lets you reply to all wall posts with a single click.'
         };
 
         function callback(response) {
