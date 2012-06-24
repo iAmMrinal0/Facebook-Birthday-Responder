@@ -1,3 +1,6 @@
+<html>
+<head>
+<title>Birthday Responder</title>
 <script type="text/javascript" src="http://connect.facebook.net/es_ES/all.js"></script>
 <script type="text/javascript">
 window.fbAsyncInit = function() {
@@ -10,19 +13,20 @@ window.fbAsyncInit = function() {
                });
                FB.getLoginStatus(function(response) {
                   if (response.authResponse) {
-                  document.location.href="http://glowing-journey-8305.herokuapp.com/post.php";
+                  document.location.href="http://bdayresponder.herokuapp.com/post.php";
               }
 				else
 				{
-				document.location.href="http://glowing-journey-8305.herokuapp.com/logout.php";
+				document.location.href="http://bdayresponder.herokuapp.com/logout.php";
 				}			  
                 });
             }
 </script>
+</head>
+<body>
 <?php
 
 require('./src/facebook.php');
-echo("hi");
 $facebook = new Facebook(array(
   'appId'  => '235376736580175',
   'secret' => 'c3059cf7554bb4a42ceede7fe509a8f9',
@@ -37,7 +41,7 @@ $logout=$facebook->getLogoutUrl();
 else
 {
 $login=$facebook->getLoginUrl(array(
-'redirect_uri' => 'http://glowing-journey-8305.herokuapp.com/post.php',
+'redirect_uri' => 'http://bdayresponder.herokuapp.com/post.php',
 'scope' => 'user_birthday,publish_stream,read_stream,user_photos'
 )
 );
@@ -46,7 +50,7 @@ $login=$facebook->getLoginUrl(array(
 
 if($user)
 {
-header("location:http://glowing-journey-8305.herokuapp.com/post.php");
+header("location:http://bdayresponder.herokuapp.com/post.php");
 }
 else
 {
@@ -55,3 +59,5 @@ else
 <?php
 }
 ?>
+</body>
+</html>

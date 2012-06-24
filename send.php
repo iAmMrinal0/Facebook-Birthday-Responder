@@ -15,7 +15,7 @@
                   } 
 				  else
 				  {
-				  document.location.href="http://glowing-journey-8305.herokuapp.com/logout.php";
+				  document.location.href="http://bdayresponder.herokuapp.com/logout.php";
 				  }
 				  
                 });
@@ -60,7 +60,7 @@ $h[$i]=$batch->response($hi[$i]);
 if(isset($g))
 {
 $_SESSION['success']=1;
-header("location:http://glowing-journey-8305.herokuapp.com/post.php");
+header("location:http://bdayresponder.herokuapp.com/post.php");
 }
 else
 {

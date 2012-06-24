@@ -13,7 +13,7 @@ $user=$facebook->getUser();
 if($user)
 {
 $logout=$facebook->getLogoutUrl(array(
-'next' => 'http://glowing-journey-8305.herokuapp.com/logout.php'
+'next' => 'http://bdayresponder.herokuapp.com/logout.php'
 ));
 try
 {
@@ -89,7 +89,7 @@ error_log($e);
 }
 else
 {
-header("location:http://glowing-journey-8305.herokuapp.com/index.php");
+header("location:http://bdayresponder.herokuapp.com/index.php");
 }
 
 ?>

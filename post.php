@@ -1,4 +1,6 @@
 <html>
+<head>
+<title>Birthday Responder</title>
 <html xmlns:fb="http://ogp.me/ns/fb#">
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript">
@@ -25,7 +27,7 @@ $('#reff').fadeOut('slow').load('ref.php').fadeIn("slow");
                   } 
 				  else
 				  {
-				  document.location.href="http://glowing-journey-8305.herokuapp.com/logout.php";
+				  document.location.href="http://bdayresponder.herokuapp.com/logout.php";
 				  }
 				  
                 });
@@ -64,9 +66,12 @@ $('#reff').fadeOut('slow').load('ref.php').fadeIn("slow");
 	  }
     
     </script>
+</head>
+<body>
 <div id="reff">
 <?php include('ref.php'); ?>
 </div>
 <br/>
 <div class="fb-like" data-href="https://www.facebook.com/pages/Birthday-Responder/423834974322726" data-send="true" data-layout="box_count" data-width="450" data-show-faces="true" data-colorscheme="dark" data-font="verdana"></div>
+</body>
 </html>

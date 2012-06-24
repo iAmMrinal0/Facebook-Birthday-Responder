@@ -8,6 +8,6 @@ $facebook = new Facebook(array(
 
 setcookie('fbs_'.$facebook->getAppId(), '', time()-100, '/');
 session_destroy();
-header('Location:http://glowing-journey-8305.herokuapp.com/index.php');
+header('Location:http://bdayresponder.herokuapp.com/index.php');
 
 ?>
