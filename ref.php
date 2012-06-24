@@ -67,7 +67,7 @@ if(is_array($num_id))
 $_SESSION['a']=$num_id;
 ?>
 <form action="send.php" method="post">
-data to post as comment:<input type="text" name="data" id="data"/>
+Comment to be posted : <input type="text" name="data" id="data"/>
 <button type="submit" name='submit' onclick='return sure();'>send</button>
 </form>
 <?php
