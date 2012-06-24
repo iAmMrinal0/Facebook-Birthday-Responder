@@ -69,7 +69,6 @@ $(document).ready(function(){
     </script>
 </head>
 <body>
-<div id="reff">
 <?php
 //session_start();
 set_time_limit(300);
@@ -98,6 +97,7 @@ catch(FacebookApiException $e)
 {
 error_log($e);
 }
+echo("<div id='reff'>");
 include('ref.php');
 ?>
 </div>
