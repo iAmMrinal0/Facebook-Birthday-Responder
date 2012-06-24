@@ -76,9 +76,8 @@ if(isset($_SESSION['success']))
 echo("posted successfully<br/>");
 unset($_SESSION['success']);
 }
-if(isset($a))
+if(!isset($a))
 {
-if($a==123)
 {
 echo("No posts to show.<br/>");
 }
