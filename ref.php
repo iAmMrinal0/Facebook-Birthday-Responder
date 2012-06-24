@@ -23,7 +23,7 @@ if($i<20)
 {
 if($d['name'] == $user_info['name'])
 {
-echo($trial['from']['name']."=>");
+echo($trial['from']['name']." wrote on your wall =>  ");
 if(isset($trial['picture']))
 {
 ?>
