@@ -71,7 +71,6 @@ $(document).ready(function(){
 <body>
 <div id="reff">
 <?php
-<?php
 //session_start();
 set_time_limit(300);
 require('./src/facebook.php');
@@ -99,8 +98,8 @@ catch(FacebookApiException $e)
 {
 error_log($e);
 }
+include('ref.php');
 ?>
-<?php include('ref.php'); ?>
 </div>
 <br/>
 <a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout"/></a>
