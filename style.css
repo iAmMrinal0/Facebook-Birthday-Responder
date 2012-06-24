@@ -48,7 +48,7 @@ div.box
 	text-decoration:none;
 	text-shadow:1px 1px 0px #528ecc;
 }
-div.reff
+div#reff
 {
 -moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
