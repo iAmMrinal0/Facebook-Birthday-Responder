@@ -53,7 +53,7 @@ header("location:http://bdayresponder.herokuapp.com/post.php");
 else
 {
 ?>
-<a href="<?php echo($login); ?>">login</a>
+<a href="<?php echo($login); ?>"><img src="fblogin.png" alt="Login"/></a>
 <p align="center">
 Your birthday?too many wall posts? Don't worry. This app lets you reply to all wall posts and like them too with a single click.
 Hope you like it.

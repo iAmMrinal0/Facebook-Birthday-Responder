@@ -2,10 +2,12 @@ html
 {
 background-color:#3b5999;
 color:white;
+font-size:15px;
 }
 a
 {
 color:red;
+text-decoration:none;
 }
 input.comment-box
 {
