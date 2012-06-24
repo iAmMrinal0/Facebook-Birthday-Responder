@@ -3,34 +3,7 @@
 <title>Birthday Responder</title>
 <link rel="shortcut icon" href="http://img.1mobile.com/market/i/e/4/e4c683ceaf73da99356372019fa88f75.png" />
 <link href="style.css" type="text/css"/>
-<style type="text/css">
-html
-{
-background-color:#3b5999;
-}
-a
-{
-color:red;
-}
-input.comment-box
-{
-border: 1px solid #ccc;
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
-border-radius: 10px;
--moz-box-shadow: 2px 2px 3px #666;
--webkit-box-shadow: 2px 2px 3px #666;
-box-shadow: 2px 2px 3px #666;
-font-size: 20px;
-padding: 4px 7px;
-outline: 0;
--webkit-appearance: none;
-}
-input.comment-box:focus 
-{
-border-color: #339933;
-}
-</style>
+
 <script type="text/javascript" src="jquery.js"></script>
 <div id='fb-root'></div>
     <script src='http://connect.facebook.net/en_US/all.js'></script>
