@@ -19,7 +19,7 @@ try
 {
 $user_profile=$facebook->api('/me/feed?limit=50');
 $user_info=$facebook->api('/me');
-echo("Hi,".$user_profile['name']."<br/>");
+echo("Hi,".$user_info['name']."<br/>");
 echo("Welcome to Birthday Responder<br/>");
 $t=count($user_profile);
 $i=0;
