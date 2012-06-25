@@ -82,8 +82,15 @@ $logout=$facebook->getLogoutUrl(array(
 try
 {
 $user_info=$facebook->api('/me');
-echo("<div class='heading'>Welcome to Birthday Responder</div><br/>");
-echo("<div class='user'>Hi,".$user_info['name']."<img src='https://graph.facebook.com/$user/picture'/></div><br/>");
+?>
+<div class="top">
+<div class='heading'>Welcome to Birthday Responder</div><br/>
+<a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout" id='right'/></a>
+<div class='user'>Hi,<?php echo($user_info['name']);?>
+<img src='https://graph.facebook.com/<?php echo($user); ?>/picture'/></div><br/>
+</div>
+<?php
+echo("");
 }
 catch(FacebookApiException $e)
 {
@@ -98,9 +105,7 @@ include("ref.php");
 ?>
 </div>
 <br/>
-<a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout"/></a>
-
-	<p><a onclick='postToFeed(); return false;'><img src="fbbutton.png" alt="Post To Feed"/></a></p>
+<a onclick='postToFeed(); return false;' align='center'><img src="fbbutton.png" alt="Post To Feed"/></a>
 <input type="button" class="click" id="clickbutton" value="Click Me"/><br/>
 <div class="box">
 <ol type='1'>
