@@ -103,5 +103,9 @@ font-size:15px;
 }
 div a#right
 {
-float:right;
+margin-right:10$;
+}
+.share
+{
+margin-left:50%;
 }
