@@ -109,3 +109,25 @@ margin-right:10%;
 {
 margin-left:50%;
 }
+.image
+{
+-webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -khtml-border-radius: 100px;
+}
+.circle {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+
+.rounded {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.circle img, .rounded img {
+  opacity: 0;
+  vertical-align: bottom;
+}
