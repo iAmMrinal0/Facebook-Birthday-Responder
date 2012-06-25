@@ -1,4 +1,4 @@
-<html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 <title>Birthday Responder</title>
 <link rel="shortcut icon" href="http://img.1mobile.com/market/i/e/4/e4c683ceaf73da99356372019fa88f75.png" />
@@ -40,7 +40,7 @@ else
 {
 $login=$facebook->getLoginUrl(array(
 'redirect_uri' => 'http://bdayresponder.herokuapp.com/post.php',
-'scope' => 'user_birthday,publish_stream,read_stream,user_photos'
+'scope' => 'user_birthday,publish_stream,read_stream'
 )
 );
 }
