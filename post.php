@@ -104,8 +104,10 @@ include("ref.php");
 ?>
 </div>
 <br/>
-<a onclick='postToFeed(); return false;' class="share"><img src="fbbutton.png" alt="Post To Feed"/></a>
+<a onclick='postToFeed(); return false;' class="share"><img src="fbbutton.png" alt="Post To Feed"/></a><br/>
+<div>
 <input type="button" class="click" id="clickbutton" value="Click Me"/><br/>
+</div>
 <div class="box">
 <ol type='1'>
 <li>Posts which are on your wall posted by others are displayed.</li><br/>
