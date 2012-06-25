@@ -109,7 +109,7 @@ include("ref.php");
 <br/>
 <br/>
 <div>
-<input type="button" class="click" id="clickbutton" value="Click Me"/><div class="fb-like" data-href="https://www.facebook.com/pages/Birthday-Responder/423834974322726" data-send="true" data-width="500" data-show-faces="true" data-colorscheme="dark" data-font="trebuchet ms"></div><br/>
+<input type="button" class="click" id="clickbutton" value="Click Me"/><div class="fb-like" data-href="https://www.facebook.com/pages/Birthday-Responder/423834974322726" data-send="true" data-width="500" data-show-faces="true" data-colorscheme="dark" data-font="trebuchet ms" data-height="80"></div><br/>
 </div>
 <div class="box">
 <ol type='1'>
