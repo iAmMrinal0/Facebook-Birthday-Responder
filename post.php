@@ -91,11 +91,11 @@ error_log($e);
 }
 }
 ?>
-<div id='reff'>
-<?php
-include("ref.php");
-?>
+<div id="wrapper" class="rounded" id='reff'>
+    <div id="content"></div>
+    <img src="loading.gif" id="loading" alt="loading" style="display:none;" />
 </div>
+
 <br/>
 <a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout"/></a>
 
