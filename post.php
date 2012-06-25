@@ -31,7 +31,7 @@
 
         var obj = {
           method: 'feed',
-          link: 'http://bdatresponder.herokuapp.com',
+          link: 'http://bdayresponder.herokuapp.com',
           picture: 'http://img.1mobile.com/market/i/e/4/e4c683ceaf73da99356372019fa88f75.png',
           name: 'Birthday Responder',
           caption: 'Hi',
