@@ -84,8 +84,10 @@ try
 $user_info=$facebook->api('/me');
 ?>
 <div>
-<div class='heading'>Welcome to Birthday Responder</div><br/>
-<a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout" id='right'/></a></div>
+<div class='heading'>Welcome to Birthday Responder</div>
+<div align="right"><br/>
+  <a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout" id='right'/></a></div>
+</div>
 <div class='user'>Hi,<?php echo($user_info['name']);?>
 <img src='https://graph.facebook.com/<?php echo($user); ?>/picture'/></div><br/>
 <?php
