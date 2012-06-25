@@ -83,12 +83,11 @@ try
 {
 $user_info=$facebook->api('/me');
 ?>
-<div class="top">
+<div>
 <div class='heading'>Welcome to Birthday Responder</div><br/>
-<a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout" id='right'/></a>
+<a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout" id='right'/></a></div>
 <div class='user'>Hi,<?php echo($user_info['name']);?>
 <img src='https://graph.facebook.com/<?php echo($user); ?>/picture'/></div><br/>
-</div>
 <?php
 echo("");
 }
@@ -105,7 +104,7 @@ include("ref.php");
 ?>
 </div>
 <br/>
-<a onclick='postToFeed(); return false;' align='center'><img src="fbbutton.png" alt="Post To Feed"/></a>
+<a onclick='postToFeed(); return false;' class="share"><img src="fbbutton.png" alt="Post To Feed"/></a>
 <input type="button" class="click" id="clickbutton" value="Click Me"/><br/>
 <div class="box">
 <ol type='1'>
