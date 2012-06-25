@@ -85,7 +85,8 @@ $user_info=$facebook->api('/me');
 ?>
 <div>
 <div class='heading'>Welcome to Birthday Responder</div>
-<div align="right"><a onClick='postToFeed(); return false;' class="share"><img src="fbbutton.png" alt="Post To Feed" align="left"/></a><br/>
+<div align="right"><a onClick='postToFeed(); return false;' class="share"><img src="fbbutton.png" alt="Post To Feed" align="left"/></a><div class="fb-like" data-href="https://www.facebook.com/pages/Birthday-Responder/423834974322726" data-send="true" data-width="500" data-show-faces="true" data-colorscheme="light" data-font="trebuchet ms"></div>
+<br/>
   <a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout" name="right" id='right'/></a></div>
 </div>
 <div class='user'>Hi,<?php echo($user_info['name']);?>
@@ -124,6 +125,5 @@ include("ref.php");
 <li>None of your data has been saved.So you don't need to worry about privacy.</li><br/>
 </ol>
 </div>
-<div class="fb-like" data-href="https://www.facebook.com/pages/Birthday-Responder/423834974322726" data-send="true" data-layout="box_count" data-width="450" data-show-faces="true" data-colorscheme="dark" data-font="verdana"></div>
 </body>
 </html>
