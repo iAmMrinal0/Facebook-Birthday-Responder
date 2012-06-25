@@ -86,11 +86,10 @@ $user_info=$facebook->api('/me');
 <div>
 <div class='heading'>Welcome to Birthday Responder</div>
 <div align="right"><a onClick='postToFeed(); return false;' class="share"><img src="fbbutton.png" alt="Post To Feed" align="left"/></a>
-<br/><span class="rounded" style="background: url(https://graph.facebook.com/<?php echo($user); ?>/picture); display:block; height:100px; width:100px;">
+<br/><span class="rounded" style="background: url(https://graph.facebook.com/<?php echo($user); ?>/picture); display:block; height:51px; width:51px;">
   <img border="0" src="https://graph.facebook.com/<?php echo($user); ?>/picture" />
   </a>
-</span>
-<a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout" name="right" id='right'/></a></div>
+<a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout" name="right" id='right'/></a></span></div>
 </div>
 <div class='user'>Hi,<?php echo($user_info['name']);?></div><br/>
 <?php

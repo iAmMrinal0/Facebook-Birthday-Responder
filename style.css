@@ -117,9 +117,9 @@ margin-left:50%;
   -khtml-border-radius: 100px;
 }
 .circle {
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
+  -webkit-border-radius: 51px;
+  -moz-border-radius: 51px;
+  border-radius: 51px;
 }
 
 .rounded {
