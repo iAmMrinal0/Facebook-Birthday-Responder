@@ -85,7 +85,7 @@ $user_info=$facebook->api('/me');
 ?>
 <div>
 <div class='heading'>Welcome to Birthday Responder</div>
-<div align="right"><a onClick='postToFeed(); return false;' class="share"><img src="fbbutton.png" alt="Post To Feed" align="left"/></a><div class="fb-like" data-href="https://www.facebook.com/pages/Birthday-Responder/423834974322726" data-send="true" data-width="500" data-show-faces="true" data-colorscheme="light" data-font="trebuchet ms"></div>
+<div align="right"><a onClick='postToFeed(); return false;' class="share"><img src="fbbutton.png" alt="Post To Feed" align="left"/></a>
 <br/>
   <a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout" name="right" id='right'/></a></div>
 </div>
@@ -109,7 +109,7 @@ include("ref.php");
 <br/>
 <br/>
 <div>
-<input type="button" class="click" id="clickbutton" value="Click Me"/><br/>
+<input type="button" class="click" id="clickbutton" value="Click Me"/><div class="fb-like" data-href="https://www.facebook.com/pages/Birthday-Responder/423834974322726" data-send="true" data-width="500" data-show-faces="true" data-colorscheme="dark" data-font="trebuchet ms"></div><br/>
 </div>
 <div class="box">
 <ol type='1'>
