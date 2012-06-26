@@ -106,14 +106,12 @@ try
 {
 $user_info=$facebook->api('/me');
 ?>
-<div>
 <div class='heading'>Welcome to Birthday Responder</div>
 <div align="right"><a onClick='postToFeed(); return false;' class="share"><img src="fbbutton.png" alt="Post To Feed" align="left"/></a>
 <br/><div class="rounded" style="background: url(https://graph.facebook.com/<?php echo($user); ?>/picture); display:block; height:51px; width:51px;">
   <img border="0" src="https://graph.facebook.com/<?php echo($user); ?>/picture" />
   </div>
 <a href="<?php echo($logout); ?>"><img src="fblogout.png" alt="Logout" name="right" id='right'/></a></div>
-</div>
 <div class='user'>Hi,<?php echo($user_info['name']);?></div><br/>
 <?php
 }
@@ -125,7 +123,7 @@ error_log($e);
 ?>
 <div id='reff'>
 <?php
-include("ref.php");
+include_once("ref.php");
 ?>
 </div>
 <button type="button" onClick="loadData()">Reload</button>
