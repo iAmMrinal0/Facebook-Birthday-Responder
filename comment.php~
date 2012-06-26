@@ -6,7 +6,7 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="jquery.1.2.js"></script>
 <script type="text/javascript">
-function loadData()
+function loadXMLDoc()
 {
 var xmlhttp;
 if (window.XMLHttpRequest)
@@ -128,7 +128,6 @@ error_log($e);
 include("ref.php");
 ?>
 </div>
-<button type="button" onClick="loadData()">Reload</button>
 <br/>
 <br/>
 <div>
