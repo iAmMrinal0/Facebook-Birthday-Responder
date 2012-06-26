@@ -100,7 +100,7 @@ error_log($e);
 ?>
 <div id='reff'>
 <?php
-include_once("ref.php");
+include("ref.php");
 ?>
 </div>
 <br/>
