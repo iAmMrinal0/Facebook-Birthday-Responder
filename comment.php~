@@ -123,7 +123,7 @@ error_log($e);
 ?>
 <div id='reff'>
 <?php
-include("ref.php");
+include_once("ref.php");
 ?>
 </div>
 <button type="button" onClick="loadData()">Reload</button>

@@ -5,29 +5,6 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="jquery.1.2.js"></script>
-<script type="text/javascript">
-function loadData()
-{
-var xmlhttp;
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-xmlhttp.onreadystatechange=function()
-  {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-    document.getElementById("reff").innerHTML=xmlhttp.responseText;
-    }
-  }
-xmlhttp.open("GET","data.php",true);
-xmlhttp.send();
-}
-</script>
 <div id='fb-root'></div>
     <script src='http://connect.facebook.net/en_US/all.js'></script>
     <script> 
@@ -126,7 +103,6 @@ error_log($e);
 include_once("ref.php");
 ?>
 </div>
-<button type="button" onClick="loadData()">Reload</button>
 <br/>
 <br/>
 <div>
