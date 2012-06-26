@@ -60,29 +60,6 @@
 	  }
     
     </script>
-    <script type="text/javascript">
-function loadDiv()
-{
-var xmlhttp;
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-xmlhttp.onreadystatechange=function()
-  {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-    document.getElementById("reff").innerHTML=xmlhttp.responseText;
-    }
-  }
-xmlhttp.open("GET","ref.php",true);
-xmlhttp.send();
-}
-</script>
 </head>
 <body>
 <?php
@@ -125,10 +102,9 @@ error_log($e);
 ?>
 <div id='reff'>
 <?php
-include("ppp.php");
+include("ref.php");
 ?>
 </div>
-<button type="button" onClick="loadDiv()">Reload</button>
 <br/>
 <br/>
 <div>
