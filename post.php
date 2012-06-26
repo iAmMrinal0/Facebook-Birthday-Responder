@@ -60,6 +60,37 @@
 	  }
     
     </script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+(function($)
+{
+    $(document).ready(function()
+    {
+        $.ajaxSetup(
+        {
+            cache: false,
+            beforeSend: function() {
+                $('#content').hide();
+                $('#loading').show();
+            },
+            complete: function() {
+                $('#loading').hide();
+                $('#content').show();
+            },
+            success: function() {
+                $('#loading').hide();
+                $('#content').show();
+            }
+        });
+        var $container = $("#content");
+        $container.load("ref.php");
+        var refreshId = setInterval(function()
+        {
+            $container.load('ref.php');
+        }, 9000);
+    });
+})(jQuery);
+</script>
 </head>
 <body>
 <?php
@@ -100,11 +131,9 @@ error_log($e);
 }
 }
 ?>
-	
-<div id='reff'>
-<?php
-include("ref.php");
-?>
+	<div id="wrapper">
+    <div id="content"></div>
+    <img src="loading.gif" id="loading" alt="loading" style="display:none;" />
 </div>
 <br/>
 <br/>
