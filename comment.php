@@ -24,7 +24,7 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("reff").innerHTML=xmlhttp.responseText;
     }
   }
-xmlhttp.open("GET","ref.php",true);
+xmlhttp.open("GET","data.php",true);
 xmlhttp.send();
 }
 </script>
