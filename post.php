@@ -60,36 +60,28 @@
 	  }
     
     </script>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script>
-(function($)
+    <script type="text/javascript">
+function loadDiv()
 {
-    $(document).ready(function()
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
-        $.ajaxSetup(
-        {
-            cache: false,
-            beforeSend: function() {
-                $('#content').hide();
-                $('#loading').show();
-            },
-            complete: function() {
-                $('#loading').hide();
-                $('#content').show();
-            },
-            success: function() {
-                $('#loading').hide();
-                $('#content').show();
-            }
-        });
-        var $container = $("#content");
-        $container.load("ref.php");
-        var refreshId = setInterval(function()
-        {
-            $container.load('ref.php');
-        }, 9000);
-    });
-})(jQuery);
+    document.getElementById("reff").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","ref.php",true);
+xmlhttp.send();
+}
 </script>
 </head>
 <body>
@@ -131,10 +123,12 @@ error_log($e);
 }
 }
 ?>
-	<div id="wrapper">
-    <div id="content"></div>
-    <img src="loading.gif" id="loading" alt="loading" style="display:none;" />
+<div id='reff'>
+<?php
+include("ref.php");
+?>
 </div>
+<button type="button" onClick="loadDiv()">Reload</button>
 <br/>
 <br/>
 <div>
