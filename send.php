@@ -29,10 +29,7 @@ require('./src/facebook.php');
 
 require('batch.php');
 
-$facebook = new Facebook(array(
-  'appId'  => '464995143525912',
-  'secret' => 'ccc341ce0edbb25731027f56863ce0e5',
-));
+$facebook = new Facebook();
 $user=$facebook->getUser();
 if($user)
 {

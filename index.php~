@@ -15,7 +15,7 @@ window.fbAsyncInit = function() {
                });
                FB.getLoginStatus(function(response) {
                   if (response.authResponse) {
-                  document.location.href="http://bdayresponder.herokuapp.com/post.php";
+                  document.location.href="http://bdayresponder.herokuapp.com/comment.php";
               }		  
                 });
             }
@@ -39,7 +39,7 @@ $logout=$facebook->getLogoutUrl();
 else
 {
 $login=$facebook->getLoginUrl(array(
-'redirect_uri' => 'http://bdayresponder.herokuapp.com/post.php',
+'redirect_uri' => 'http://bdayresponder.herokuapp.com/comment.php',
 'scope' => 'user_birthday,publish_stream,read_stream'
 )
 );
@@ -48,7 +48,7 @@ $login=$facebook->getLoginUrl(array(
 
 if($user)
 {
-header("location:http://bdayresponder.herokuapp.com/post.php");
+header("location:http://bdayresponder.herokuapp.com/comment.php");
 }
 else
 {

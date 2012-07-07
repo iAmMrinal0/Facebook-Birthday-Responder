@@ -60,7 +60,7 @@ $h[$i]=$batch->response($hi[$i]);
 if(isset($g))
 {
 $_SESSION['success']=1;
-header("location:http://bdayresponder.herokuapp.com/post.php");
+header("location:http://bdayresponder.herokuapp.com/comment.php");
 }
 else
 {
