@@ -64,7 +64,7 @@ border:1px solid #84bbf3;
 display:inline-block;
 color:#ffffff;
 font-family:Comic Sans MS;
-font-size:15px;
+font-size:20px;
 text-decoration:none;
 text-shadow:1px 1px 0px #528ecc;
 float:center;
@@ -137,5 +137,9 @@ vertical-align: bottom;
 }
 .box ol li
 {
-font-size:25px;
+font-size:20px;
+}
+.user
+{
+font-size:20px;
 }

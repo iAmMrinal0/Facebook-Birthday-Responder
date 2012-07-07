@@ -137,5 +137,9 @@ vertical-align: bottom;
 }
 .box ol li
 {
-font-size:50px;
+font-size:20px;
+}
+.user
+{
+font-size:20px;
 }
