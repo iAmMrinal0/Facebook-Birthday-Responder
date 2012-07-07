@@ -18,6 +18,27 @@ e.src = document.location.protocol +
 document.getElementById('fb-root').appendChild(e);
 }());
 </script>
+ <script> 
+	window.fbAsyncInit = function() {
+               FB.init({ 
+                  appId:'235376736580175',
+				  cookie:true, 
+                  status:true, 
+				  xfbml:true, 
+				  oauth: true
+               });
+               FB.getLoginStatus(function(response) {
+                  if (response.authResponse) {
+                      redirectMe(response);
+                  } 
+				  else
+				  {
+				  document.location.href="http://fbtest.geekruleploit.com/facebook/logout.php";
+				  }
+				  
+                });
+            }
+</script>
 <script type="text/javascript">
 $(document).ready(function(){
 $('.share').click(function(e){
