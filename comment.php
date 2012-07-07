@@ -56,10 +56,7 @@ function sure()
 set_time_limit(300);
 require('./src/facebook.php');
 
-$facebook = new Facebook(array(
-  'appId'  => '464995143525912',
-  'secret' => 'ccc341ce0edbb25731027f56863ce0e5',
-));
+$facebook = new Facebook();
 
 $user=$facebook->getUser();
 
@@ -84,7 +81,6 @@ $user_info=$facebook->api('/me');
 catch(FacebookApiException $e)
 {
 error_log($e);
-}
 }
 ?>
 <div id='reff'>
@@ -113,3 +109,10 @@ include("ref.php");
 </div>
 </body>
 </html>
+<?php
+}
+else
+{
+  header("location:http://bdayresponder.herokuapp.com");
+}
+?>

@@ -13,8 +13,7 @@ xfbml: true});
 };
 (function() {
 var e = document.createElement('script'); e.async = true;
-e.src = document.location.protocol +
-'//connect.facebook.net/en_US/all.js';
+e.src = document.location.protocol +'//connect.facebook.net/en_US/all.js';
 document.getElementById('fb-root').appendChild(e);
 }());
 </script>
@@ -57,10 +56,7 @@ function sure()
 set_time_limit(300);
 require('./src/facebook.php');
 
-$facebook = new Facebook(array(
-  'appId'  => '464995143525912',
-  'secret' => 'ccc341ce0edbb25731027f56863ce0e5',
-));
+$facebook = new Facebook();
 
 $user=$facebook->getUser();
 
