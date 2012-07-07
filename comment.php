@@ -5,47 +5,37 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="jquery.1.2.js"></script>
-<div id='fb-root'></div>
-    <script src='http://connect.facebook.net/en_US/all.js'></script>
-    <script> 
-	window.fbAsyncInit = function() {
-               FB.init({ 
-                  appId:'464995143525912',
-				  cookie:true, 
-                  status:true, 
-				  xfbml:true, 
-				  oauth: true
-               });
-               FB.getLoginStatus(function(response) {
-                  if (response.authResponse) {
-                      redirectMe(response);
-                  } 
-				  else
-				  {
-				  document.location.href="http://bdayresponder.herokuapp.com/logout.php";
-				  }
-				  
-                });
-            }
-      function postToFeed() {
-
-        var obj = {
-          method: 'feed',
-          link: 'http://bdayresponder.herokuapp.com',
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+FB.init({appId: '235376736580175', status: true, cookie: true,
+xfbml: true});
+};
+(function() {
+var e = document.createElement('script'); e.async = true;
+e.src = document.location.protocol +
+'//connect.facebook.net/en_US/all.js';
+document.getElementById('fb-root').appendChild(e);
+}());
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('.share').click(function(e){
+e.preventDefault();
+FB.ui(
+{
+method: 'feed',
+          link: 'http://fbtest.geekruleploit.com/facebook',
           picture: 'http://img.1mobile.com/market/i/e/4/e4c683ceaf73da99356372019fa88f75.png',
           name: 'Birthday Responder',
           caption: 'Hi',
           description: 'Your birthday?too many wall posts? Dont worry. This app lets you reply to all wall posts with a single click.'
-        };
-
-        function callback(response) {
-          
-        }
-
-        FB.ui(obj, callback);
-      }
-	  
-	  function sure()
+});
+});
+});
+</script>
+<script>
+function sure()
 	  {
 		var a=document.getElementById('data').value;
 		if((a == null) || (a==''))
@@ -58,8 +48,7 @@
 			return true;
 		}
 	  }
-    
-    </script>
+</script>
 </head>
 <body>
 <?php
@@ -84,7 +73,7 @@ try
 $user_info=$facebook->api('/me');
 ?>
 <div class='heading'>Welcome to Birthday Responder</div>
-<div align="right"><a onClick='postToFeed(); return false;' class="share"><img src="fbbutton.png" alt="Post To Feed" align="left"/></a>
+<div align="right"><a class="share"><img src="fbbutton.png" alt="Post To Feed" align="left"/></a>
 <br/><div class="rounded" style="background: url(https://graph.facebook.com/<?php echo($user); ?>/picture); display:block; height:51px; width:51px;">
   <img border="0" src="https://graph.facebook.com/<?php echo($user); ?>/picture" />
   </div>
