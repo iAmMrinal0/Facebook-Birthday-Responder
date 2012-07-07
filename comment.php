@@ -70,7 +70,7 @@ try
 $user_info=$facebook->api('/me');
 ?>
 <div class='heading'>Welcome to Birthday Responder</div>
-<div align="right"><a class="share"><img src="fbbutton.png" alt="Post To Feed" align="left"/></a>
+<div align="right"><a class="share"><img src="share_button.png" alt="Post To Feed" align="left"/></a>
 <br/><div class="rounded" style="background: url(https://graph.facebook.com/<?php echo($user); ?>/picture); display:block; height:51px; width:51px;">
   <img border="0" src="https://graph.facebook.com/<?php echo($user); ?>/picture" />
   </div>
