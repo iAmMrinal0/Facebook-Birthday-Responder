@@ -8,7 +8,7 @@
 <div id="fb-root"></div>
 <script>
 window.fbAsyncInit = function() {
-FB.init({appId: '235376736580175', status: true, cookie: true,
+FB.init({appId: '464995143525912', status: true, cookie: true,
 xfbml: true});
 };
 (function() {
